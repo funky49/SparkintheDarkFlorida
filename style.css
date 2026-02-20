@@ -82,17 +82,13 @@ h2 {
 .headshot-placeholder {
     width: 150px;
     height: 150px;
-    background-color: #ddd;
     border-radius: 50%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    object-fit: cover; /* This makes sure your photo isn't stretched or squished */
+    display: block; 
     float: left;
     margin: 0 20px 20px 0;
-    color: #666;
-    text-align: center;
     border: 3px solid var(--primary-color);
-    object-fit: cover;
+    background-color: #ddd;
 }
 
 form {
