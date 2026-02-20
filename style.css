@@ -1,0 +1,143 @@
+:root {
+    --primary-color: #2c3e50;
+    --accent-color: #f39c12;
+    --bg-color: #f8f9fa;
+    --text-color: #333;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+    font-size: 1.8rem;
+}
+
+nav button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    margin: 0 10px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+nav button:hover, nav button.active {
+    background-color: var(--accent-color);
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 20px;
+}
+
+.page-section {
+    display: none;
+    animation: fadeIn 0.5s;
+}
+
+.page-section.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+h2 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 5px;
+}
+
+.project-card, .bio-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.headshot-placeholder {
+    width: 150px;
+    height: 150px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    margin: 0 20px 20px 0;
+    color: #666;
+    text-align: center;
+    border: 3px solid var(--primary-color);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+button.submit-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button.submit-btn:hover {
+    background-color: var(--accent-color);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+@media (max-width: 600px) {
+    nav button {
+        display: block;
+        width: 100%;
+        margin: 5px 0;
+    }
+    .headshot-placeholder {
+        float: none;
+        display: block;
+        margin: 0 auto 20px auto;
+    }
+}
