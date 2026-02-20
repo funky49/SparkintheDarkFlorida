@@ -138,3 +138,18 @@ footer {
         margin: 0 auto 20px auto;
     }
 }
+
+/* Responsive Video Container */
+.video-container {
+    width: 100%;
+    max-width: 800px; /* Prevents the video from getting too massive on giant desktop monitors */
+    margin: 0 auto 20px auto; /* This perfectly centers the video and adds breathing room at the bottom */
+    aspect-ratio: 16 / 9; /* This is the magic line that locks it to the standard YouTube widescreen format */
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px; /* Rounds the corners slightly to match your other project cards */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Adds a subtle drop shadow */
+}
