@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candle in the Dark | Science Outreach</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Candle in the Dark</h1>
+        <nav>
+            <button onclick="showPage('home')" id="nav-home" class="active">Home</button>
+            <button onclick="showPage('projects')" id="nav-projects">Projects</button>
+            <button onclick="showPage('about')" id="nav-about">About</button>
+            <button onclick="showPage('contact')" id="nav-contact">Contact</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="page-section active">
+            <h2>Illuminating Science for Everyone</h2>
+            <p>Welcome to Candle in the Dark. We are dedicated to noncommercial research and the dissemination of scientific information for public education and general welfare.</p>
+            <p>Our mission is to make complex scientific concepts accessible, engaging, and hands-on for communities across Florida and beyond.</p>
+        </section>
+
+        <section id="projects" class="page-section">
+            <h2>Outreach & Programs</h2>
+            
+            <div class="project-card">
+                <h3>The basslab Initiative</h3>
+                <p><strong>Focus:</strong> Acoustics, Physics, and Fluid Dynamics</p>
+                <p>An interactive educational experience that bridges technology and physical science. Using a custom web application, basslab generates specific low-frequency sounds designed to interact visually and physically with non-Newtonian fluids (like oobleck). This provides a striking, hands-on demonstration of cymatics and sound wave energy.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Future Exhibits</h3>
+                <p><em>Check back soon for more interactive science modules and festival dates.</em></p>
+            </div>
+        </section>
+
+        <section id="about" class="page-section">
+            <h2>About Us</h2>
+            <div class="bio-card">
+                <div class="headshot-placeholder">[Insert Headshot Here]</div>
+                <p>Hello! I am the founder of Candle in the Dark. My background is rooted in the intersection of technology, music, and science.</p>
+                <p>I started this organization because I believe scientific literacy is crucial for the general welfare of the public. By translating complex ideas into interactive, understandable experiences, we can spark curiosity and a lifelong love of learning.</p>
+                <div style="clear: both;"></div> 
+            </div>
+        </section>
+
+        <section id="contact" class="page-section">
+            <h2>Get Involved</h2>
+            <p>Whether you are interested in booking an exhibit, exploring a partnership, or learning more about our noncommercial research, we'd love to hear from you.</p>
+            
+            <div class="project-card">
+                <form action="#" method="POST" onsubmit="alert('Template form submitted!'); return false;">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Candle in the Dark. SIC Code 8733: Noncommercial Research & Education.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
