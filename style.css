@@ -153,3 +153,41 @@ footer {
     border-radius: 8px; /* Rounds the corners slightly to match your other project cards */
     box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Adds a subtle drop shadow */
 }
+
+/* Update your existing nav CSS or add this if you don't have it */
+nav {
+  display: flex;
+  justify-content: space-between; /* Keeps the logo on the left, links on the right */
+  align-items: center; /* Vertically centers everything */
+  padding: 10px 20px; /* Adjust padding as needed */
+}
+
+/* Style the container holding the logo and text */
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Adds space between the logo and the text */
+}
+
+/* Style the logo image */
+.nav-logo {
+  height: 50px; /* Adjust the height to fit your navbar */
+  width: auto;  /* Maintains the aspect ratio */
+  border-radius: 5px; /* Optional: adds slightly rounded corners to your image */
+}
+
+/* Style the brand text */
+.brand-text {
+  font-size: 1.5rem; /* Adjust the size as needed */
+  font-weight: bold;
+  color: #333; /* Update with a color that fits your theme */
+}
+
+/* Ensure your nav links display horizontally */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
