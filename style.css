@@ -126,15 +126,6 @@ footer {
     color: #666;
 }
 
-quote {
-    font-style: italic;
-    text-align: center;
-    padding: 5px;
-    margin-top: 10px;
-    font-size: 0.7rem;
-    color: #000000;
-}
-
 @media (max-width: 600px) {
     nav button {
         display: block;
