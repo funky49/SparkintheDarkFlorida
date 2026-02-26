@@ -120,10 +120,18 @@ button.submit-btn:hover {
 
 footer {
     text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+    padding: 10px;
+    margin-top: 20px;
     font-size: 0.9rem;
     color: #666;
+}
+
+quote {
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 0.5rem;
+    color: #000000;
 }
 
 @media (max-width: 600px) {
