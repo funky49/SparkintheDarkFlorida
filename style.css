@@ -170,3 +170,20 @@ footer {
 .navbar.shrink .navbar-brand {
   font-size: 1.2rem;
 }
+
+/* 1. Set the transition on the navbar and the logo image */
+.navbar, .navbar-brand img {
+    transition: all 0.3s ease-in-out;
+}
+
+/* 2. Define the 'shrink' state */
+/* We reduce the padding on the navbar and shrink the logo height */
+.navbar.navbar-shrink {
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+    background-color: rgba(0, 0, 0, 0.95) !important; /* Slightly darker/solid */
+}
+
+.navbar.navbar-shrink .navbar-brand img {
+    height: 40px; /* Adjust this to how small you want the logo to get */
+}
