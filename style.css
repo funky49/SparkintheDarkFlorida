@@ -184,6 +184,10 @@ footer {
     background-color: rgba(0, 0, 0, 0.95) !important; /* Slightly darker/solid */
 }
 
-.navbar.navbar-shrink .navbar-brand img {
-    height: 40px; /* Adjust this to how small you want the logo to get */
+
+/* This shrinks the actual logo image when the navbar shrinks */
+.navbar-shrink .navbar-brand img {
+    height: 40px !important; /* Adjust 40px to your preferred 'small' size */
+    width: auto;
+    transition: height 0.3s ease-in-out;
 }
