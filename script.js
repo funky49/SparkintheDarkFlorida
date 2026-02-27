@@ -35,3 +35,12 @@ console.log(`
 
           Thank you for pressing F12.
 `);
+
+window.onscroll = function() {
+  const nav = document.querySelector('.navbar'); // Adjust selector to match your HTML
+  if (window.scrollY > 50) {
+    nav.classList.add('shrink');
+  } else {
+    nav.classList.remove('shrink');
+  }
+};
