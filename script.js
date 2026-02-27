@@ -20,3 +20,18 @@ function showPage(pageId) {
     // 5. Scroll to top on mobile when changing pages
     window.scrollTo(0, 0);
 }
+
+console.log(`
++-------------------------+-----------------+
+|                         |                 |
+|                         |                 |
+|                         |        8        |
+|                         |                 |
+|            13           +---------+-------+
+|                         |         |   3   |
+|                         |    5    +---+---+
+|                         |         | 2 |1|1|
++-------------------------+---------+---+-+-+
+
+          Thank you for pressing F12.
+`);
