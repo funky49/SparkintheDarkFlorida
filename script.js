@@ -36,11 +36,13 @@ console.log(`
           Thank you for pressing F12.
 `);
 
-window.onscroll = function() {
-  const nav = document.querySelector('.navbar'); // Adjust selector to match your HTML
-  if (window.scrollY > 50) {
-    nav.classList.add('shrink');
-  } else {
-    nav.classList.remove('shrink');
-  }
-};
+window.addEventListener('scroll', function() {
+    // Select your navbar using the ID or class
+    const navbar = document.querySelector('.navbar');
+    
+    if (window.scrollY > 50) {
+        navbar.classList.add('navbar-shrink');
+    } else {
+        navbar.classList.remove('navbar-shrink');
+    }
+});
