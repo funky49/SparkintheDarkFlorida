@@ -179,9 +179,9 @@ footer {
 /* 2. Define the 'shrink' state */
 /* We reduce the padding on the navbar and shrink the logo height */
 .navbar.navbar-shrink {
-    padding-top: 0.5rem !important;
-    padding-bottom: 0.5rem !important;
-    background-color: rgba(0, 0, 0, 0.95) !important; /* Slightly darker/solid */
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    background-color: rgba(0, 0, 0, 0.9) !important;
 }
 
 
