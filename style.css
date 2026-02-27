@@ -153,3 +153,20 @@ footer {
     border-radius: 8px; /* Rounds the corners slightly to match your other project cards */
     box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Adds a subtle drop shadow */
 }
+
+/* The default state (large) */
+.navbar {
+  transition: all 0.4s ease; /* This makes the shrink smooth */
+  padding: 30px 10px;        /* Or whatever your current size is */
+}
+
+/* The state after scrolling */
+.navbar.shrink {
+  padding: 10px 10px;        /* Smaller padding */
+  background-color: rgba(0, 0, 0, 0.9); /* Optional: make it more solid */
+}
+
+/* Optional: Shrink the logo/brand text too */
+.navbar.shrink .navbar-brand {
+  font-size: 1.2rem;
+}
