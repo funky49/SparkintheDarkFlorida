@@ -37,12 +37,10 @@ console.log(`
 `);
 
 window.addEventListener('scroll', function() {
-    // Select your navbar using the ID or class
-    const navbar = document.querySelector('.navbar');
-    
-    if (window.scrollY > 50) {
-        navbar.classList.add('navbar-shrink');
-    } else {
-        navbar.classList.remove('navbar-shrink');
-    }
+  const navbar = document.querySelector('#mainNav'); // Using your ID
+  if (window.scrollY > 100) {
+    navbar.classList.add('navbar-shrink');
+  } else {
+    navbar.classList.remove('navbar-shrink');
+  }
 });
